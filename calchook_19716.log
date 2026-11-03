@@ -1,73 +1,19 @@
-[2026-11-03 23:18:11.975] xlAutoOpen: calchook built Nov  3 2026 21:30:03 on EXCEL.EXE 16.0.20326.20142, MdCallBack12=00007FF607F0CAE0 tsc_per_ns=3.3792
-[2026-11-03 23:18:11.975] spill: saving records to C:\Users\dazzopardi_sym\AppData\Local\calchook_19716.spill (ring 131072 records/thread, limit 8192 MB)
-[2026-11-03 23:18:12.157] discover: 181 ms; addresses below at preferred base 0x140000000
-[2026-11-03 23:18:12.157] discover:   function table  ok: m_rgfunc[1]=0x1437D76D8 stride=0x50 entries=737
-[2026-11-03 23:18:12.158] discover:   rich bridge     ok: 0x140298670 (429 entries)
-[2026-11-03 23:18:12.158] discover:   single-arg SUM  ok: 0x140A27E60 (4 evaluator sites)
-[2026-11-03 23:18:12.170] discover:   XLL UDF core    ok: 0x1426B50BC (called from 0x1426B5C39)
-[2026-11-03 23:18:12.170] install: parsed 737, patched 617 +0x18 (legacy) and 737 +0x20 (rich) slots (429 rich slots are the bridge to +0x18; 120 entries have no +0x18)
-[2026-11-03 23:18:12.228] install: single-arg SUM (tAttrSum) hook live at 00007FF6079C7E60 (0x140A27E60, 16-byte window)
-[2026-11-03 23:18:12.282] install: UDF detour live at 00007FF6096550BC (0x1426B50BC, 15-byte window)
-[2026-11-03 23:18:12.283] registered 12/12 (module=C:\blp\API\Office Tools\calchook.xll macro_type=2)
-[2026-11-03 23:18:12.291] menu: Add-ins tab -> CalcHook; 3 shortcuts (Ctrl+Alt+Shift+S/P/D)
-[2026-11-03 23:18:12.842] vba: VBE7 7.01.1158: dispatch table at 00007FFB3EF442E8 (RVA 0x3942E8, 1700 entries; 3 candidate tables), statement handler RVA 0x389FFC; 2 statement + 25 exit slots hooked
-[2026-11-03 23:18:37.672] dump: top functions by self time (of 89.785 ms recorded):
-[2026-11-03 23:18:37.672]   COUNTIF                       588 calls  self     61.557 ms  total     61.557 ms
-[2026-11-03 23:18:37.672]   COUNTA                      41541 calls  self     12.887 ms  total     12.887 ms
-[2026-11-03 23:18:37.672]   OFFSET                      39627 calls  self     12.743 ms  total     12.743 ms
-[2026-11-03 23:18:37.672]   AVERAGE                      1485 calls  self      1.041 ms  total      1.041 ms
-[2026-11-03 23:18:37.672]   MIN                           272 calls  self      0.586 ms  total      0.586 ms
-[2026-11-03 23:18:37.672]   MAX                           275 calls  self      0.225 ms  total      0.225 ms
-[2026-11-03 23:18:37.672]   SUBSTITUTE                    280 calls  self      0.189 ms  total      0.189 ms
-[2026-11-03 23:18:37.672]   LEFT                          309 calls  self      0.135 ms  total      0.135 ms
-[2026-11-03 23:18:37.672]   NA                            277 calls  self      0.102 ms  total      0.102 ms
-[2026-11-03 23:18:37.672]   OR                            105 calls  self      0.069 ms  total      0.069 ms
-[2026-11-03 23:18:37.672] dump: top cells by self time:
-[2026-11-03 23:18:37.672] dump: C:\Users\dazzopardi_sym\AppData\Local\calchook_19716.csv done (85170 records, 0 cells, 14 threads)
-[2026-11-03 23:18:37.674]   calls COUNTA       rich=0 legacy=41796 skipped-as-UI=5 no-caller=0
-[2026-11-03 23:18:37.674]   calls OFFSET       rich=0 legacy=39627 skipped-as-UI=0 no-caller=0
-[2026-11-03 23:18:37.674]   calls AVERAGE      rich=0 legacy=1490 skipped-as-UI=5 no-caller=0
-[2026-11-03 23:18:37.674]   calls COUNTIF      rich=0 legacy=589 skipped-as-UI=0 no-caller=0
-[2026-11-03 23:18:37.674]   calls LEFT         rich=0 legacy=309 skipped-as-UI=0 no-caller=0
-[2026-11-03 23:18:37.674]   calls SUBSTITUTE   rich=0 legacy=280 skipped-as-UI=0 no-caller=0
-[2026-11-03 23:18:37.675]   calls NA           rich=0 legacy=277 skipped-as-UI=0 no-caller=0
-[2026-11-03 23:18:37.675]   calls MIN          rich=0 legacy=276 skipped-as-UI=0 no-caller=0
-[2026-11-03 23:18:37.675]   calls MAX          rich=0 legacy=275 skipped-as-UI=0 no-caller=0
-[2026-11-03 23:18:37.675]   calls LEN          rich=0 legacy=180 skipped-as-UI=0 no-caller=0
-[2026-11-03 23:18:37.676]   calls AND          rich=0 legacy=149 skipped-as-UI=0 no-caller=0
-[2026-11-03 23:18:37.676]   calls OR           rich=0 legacy=105 skipped-as-UI=0 no-caller=0
-[2026-11-03 23:18:37.676]   calls AGGREGATE    rich=15 legacy=15 skipped-as-UI=30 no-caller=0
-[2026-11-03 23:18:37.676]   calls FIND         rich=0 legacy=15 skipped-as-UI=0 no-caller=0
-[2026-11-03 23:18:37.676]   calls NOT          rich=0 legacy=12 skipped-as-UI=0 no-caller=0
-[2026-11-03 23:18:37.676]   calls TIME         rich=0 legacy=12 skipped-as-UI=0 no-caller=0
-[2026-11-03 23:18:37.676]   vba: 0 procedure calls opened, 0 closed by their exit, 0 closed without one, 0 unmatched exits, 0 names not resolved, 0 refused (stack full)
-[2026-11-03 23:19:00.082] dump: top functions by self time (of 89.785 ms recorded):
-[2026-11-03 23:19:00.082]   COUNTIF                       588 calls  self     61.557 ms  total     61.557 ms
-[2026-11-03 23:19:00.082]   COUNTA                      41541 calls  self     12.887 ms  total     12.887 ms
-[2026-11-03 23:19:00.082]   OFFSET                      39627 calls  self     12.743 ms  total     12.743 ms
-[2026-11-03 23:19:00.082]   AVERAGE                      1485 calls  self      1.041 ms  total      1.041 ms
-[2026-11-03 23:19:00.082]   MIN                           272 calls  self      0.586 ms  total      0.586 ms
-[2026-11-03 23:19:00.082]   MAX                           275 calls  self      0.225 ms  total      0.225 ms
-[2026-11-03 23:19:00.082]   SUBSTITUTE                    280 calls  self      0.189 ms  total      0.189 ms
-[2026-11-03 23:19:00.083]   LEFT                          309 calls  self      0.135 ms  total      0.135 ms
-[2026-11-03 23:19:00.083]   NA                            277 calls  self      0.102 ms  total      0.102 ms
-[2026-11-03 23:19:00.083]   OR                            105 calls  self      0.069 ms  total      0.069 ms
-[2026-11-03 23:19:00.083] dump: top cells by self time:
-[2026-11-03 23:19:00.083] dump: C:\Users\dazzopardi_sym\AppData\Local\calchook_19716_r1.csv done (85170 records, 0 cells, 14 threads)
-[2026-11-03 23:19:00.083]   calls COUNTA       rich=0 legacy=41797 skipped-as-UI=6 no-caller=0
-[2026-11-03 23:19:00.085]   calls OFFSET       rich=0 legacy=39627 skipped-as-UI=0 no-caller=0
-[2026-11-03 23:19:00.085]   calls AVERAGE      rich=0 legacy=1491 skipped-as-UI=6 no-caller=0
-[2026-11-03 23:19:00.085]   calls COUNTIF      rich=0 legacy=589 skipped-as-UI=0 no-caller=0
-[2026-11-03 23:19:00.085]   calls LEFT         rich=0 legacy=309 skipped-as-UI=0 no-caller=0
-[2026-11-03 23:19:00.085]   calls SUBSTITUTE   rich=0 legacy=280 skipped-as-UI=0 no-caller=0
-[2026-11-03 23:19:00.085]   calls NA           rich=0 legacy=277 skipped-as-UI=0 no-caller=0
-[2026-11-03 23:19:00.085]   calls MIN          rich=0 legacy=276 skipped-as-UI=0 no-caller=0
-[2026-11-03 23:19:00.085]   calls MAX          rich=0 legacy=275 skipped-as-UI=0 no-caller=0
-[2026-11-03 23:19:00.085]   calls LEN          rich=0 legacy=180 skipped-as-UI=0 no-caller=0
-[2026-11-03 23:19:00.086]   calls AND          rich=0 legacy=149 skipped-as-UI=0 no-caller=0
-[2026-11-03 23:19:00.086]   calls OR           rich=0 legacy=105 skipped-as-UI=0 no-caller=0
-[2026-11-03 23:19:00.086]   calls AGGREGATE    rich=18 legacy=18 skipped-as-UI=36 no-caller=0
-[2026-11-03 23:19:00.086]   calls FIND         rich=0 legacy=15 skipped-as-UI=0 no-caller=0
-[2026-11-03 23:19:00.086]   calls NOT          rich=0 legacy=12 skipped-as-UI=0 no-caller=0
-[2026-11-03 23:19:00.086]   calls TIME         rich=0 legacy=12 skipped-as-UI=0 no-caller=0
-[2026-11-03 23:19:00.086]   vba: 0 procedure calls opened, 0 closed by their exit, 0 closed without one, 0 unmatched exits, 0 names not resolved, 0 refused (stack full)
+[2026-11-03 23:39:54.012] caller: first failure: OFFSET (legacy path), arg5=21AB76E5AB8, eval=[arg5+0x20]=21AB765E598, C=[eval+0x80]=0; expected C+0x3C=00100000 and C+0x40=00004000, C+0xC8=eval. Please send this log:
+[2026-11-03 23:39:54.012]     arg5+00 (21AB76E5AB8): 28D10BB71A020000 0000000000000000 285DF9B31A020000 0800F2B31A020000
+[2026-11-03 23:39:54.012]     arg5+20 (21AB76E5AD8): 98E565B71A020000 E812150BF67F0000 A873E3B31A020000 A873E3B31A020000
+[2026-11-03 23:39:54.012]     arg5+40 (21AB76E5AF8): 0000000000000000 0100000002000000 40495CDA1A020000 0000000000000000
+[2026-11-03 23:39:54.013]     arg5+60 (21AB76E5B18): D0F47FB623000000 E80C34D01A020000 0000000000000000 0000000000000000
+[2026-11-03 23:39:54.013]     arg5+80 (21AB76E5B38): 0000000000000000 0000000000000000 0000000000000000 0000000000000000
+[2026-11-03 23:39:54.013]     arg5+A0 (21AB76E5B58): 0000000000000000 0000000000000000 E82600C91A020000 0000000000000000
+[2026-11-03 23:39:54.013]     arg5+C0 (21AB76E5B78): 404274B71A020000 988C15DA1A020000 97FFFFFF00000000 E80C34D01A020000
+[2026-11-03 23:39:54.013]     arg5+E0 (21AB76E5B98): 0000100000400000 FFFF0F00FF3F0000 0000000000000000 0000000000000000
+[2026-11-03 23:39:54.013]     eval+00 (21AB765E598): 0000000000000000 E812150BF67F0000 0100000000000000 D876770AF67F0000
+[2026-11-03 23:39:54.013]     eval+20 (21AB765E5B8): D85D7EB21A020000 0100000000000000 0000000000000000 E8E9EDB31A020000
+[2026-11-03 23:39:54.013]     eval+40 (21AB765E5D8): D0BF130BF67F0000 089A07B71A020000 0101000101010000 A873E3B31A020000
+[2026-11-03 23:39:54.013]     eval+60 (21AB765E5F8): 285DF9B31A020000 0800F2B31A020000 002B77B71A020000 386B1E0BF67F0000
+[2026-11-03 23:39:54.013]     eval+80 (21AB765E618): 0000000000000000 0000000000000000 0000000000000000 0000000000000000
+[2026-11-03 23:39:54.013]     eval+A0 (21AB765E638): 404274B71A020000 A873E3B31A020000 0000000000000000 0000000000000000
+[2026-11-03 23:39:54.013]     eval+C0 (21AB765E658): 0000000000000000 0000000000000000 0000000000000000 0000000000000000
+[2026-11-03 23:39:54.013]     eval+E0 (21AB765E678): 0000000000000000 0000000000000000 0000000000000000 0000000000000000
+[2026-11-03 23:39:54.013]     C unreadable
+[2026-11-03 23:39:54.013]   vba: 8 procedure calls opened, 8 closed by their exit, 0 closed without one, 0 unmatched exits, 0 names not resolved, 0 refused (stack full)
